@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Use of Variables</title>
+
+
+  </head>
+  <body>
+    <button class="cart-button" onclick="variable1 = variable1 + 1; document.getElementById('cart-count').textContent = 'Total items in cart: ' + variable1; console.log('Total items in cart: ' + variable1);">
+      Add to cart
+    </button>
+    <button onclick="variable1 = variable1 + 3; document.getElementById('cart-count').textContent = 'Total items in cart: ' + variable1; console.log('Total items in cart: ' + variable1);">
+      +3
+    </button>
+    <button onclick="variable1 = variable1 - 1; document.getElementById('cart-count').textContent = 'Total items in cart: ' + variable1; console.log('Total items in cart: ' + variable1);">
+      -1
+    </button>
+    <button onclick="variable1 = 0; document.getElementById('cart-count').textContent = 'Total items in cart: ' + variable1; console.log('Total items in cart: ' + variable1);">
+      Reset
+    </button>
+    <p id="cart-count">
+    </p>
+
+
+    <script>
+      let variable1 = 0;
+      console.log(variable1);
+      document.getElementById("cart-count").textContent = "Total items in cart: " + variable1;
+      console.log("Total items in cart: " + variable1);
+    </script>
+
+  </body>
+</html>
+

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>calcius to fehrenhiet</title>
+</head>
+<body>
+  <script>
+    function celciusToFehrenhiet(celcius) {
+      Fahrenhiet = (celcius * 9/5) + 32
+      console.log(Fahrenhiet)
+    }
+    celciusToFehrenhiet(25);
+    
+    
+    function fahrenhietToCelcius(Fahrenhiet) {
+      celcius = (Fahrenhiet -32) * 5/9
+      console.log(celcius)
+    }
+    fahrenhietToCelcius(86);
+
+    function convertTemprature(degrees , unit){
+      if(unit === 'C'){
+        celciusToFehrenhiet(degrees);
+      }
+      else if (unit === 'F'){
+        fahrenhietToCelcius(degrees , unit);
+      }
+    }
+    convertTemprature(25, 'C');
+    convertTemprature(86, 'F');
+    </script>
+</body>
+</html>

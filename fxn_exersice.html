@@ -30,6 +30,20 @@
     }
     convertTemprature(25, 'C');
     convertTemprature(86, 'F');
+
+    function convertLength(length , from , to){
+      if(from === 'km' && to === 'miles'){
+        miles = length / 1.6;
+        console.log(miles);
+      }
+      else if(from === 'miles' && to === 'km'){
+        km = length * 1.6;
+        console.log(km);
+      }
+    }
+    convertLength(50, 'miles', 'km');
+    convertLength(32, 'km', 'miles');
+
     </script>
 </body>
 </html>

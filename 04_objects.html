@@ -31,6 +31,9 @@
       rating : {
         star : 4.5,
         count : 100 // nested object, an object inside an object
+      },
+      fun : function function1(){
+        console.log('function inside object');
       }
     };
     console.log(product2);
@@ -39,6 +42,7 @@
     console.log(product2['delivery-date']); // helps to avoid errors as minus sign is not allowed in dot notation
     console.log(product2.rating.star);
     console.log(product2.rating.count);
+    product2.fun();
     
   </script>
 </body>

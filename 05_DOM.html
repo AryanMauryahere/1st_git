@@ -24,7 +24,8 @@
 
   <script>
     document.querySelector('.js-button').addEventListener('click', function() {
-      document.querySelector('.js-button').textContent = 'Clicked';
+      console.log('Button clicked!');
+      document.querySelector('.js-button').innerHTML = 'Clicked';
     });
 
     /*

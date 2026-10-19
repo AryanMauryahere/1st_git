@@ -51,6 +51,18 @@
     .calculate-button:hover {
       background-color: darkblue;
     }
+    .js-subs-button-subscribed {
+      background-color: green;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    .js-subs-button-subscribed:hover {
+      background-color: darkgreen;
+    }
+
   </style>
 
   <script>
@@ -58,9 +70,11 @@
     subsButton.addEventListener('click', function() {
       if (subsButton.textContent.trim() === 'Subscribe') {
         subsButton.textContent = 'Subscribed';
+        // subsButton.classList.replace('js-subs-button', 'js-subs-button-subscribed');
       } else {
         subsButton.textContent = 'Subscribe';
       }
+      subsButton.classList.toggle('js-subs-button-subscribed');
     });
 
 

@@ -7,15 +7,15 @@
 </head>
 <body>
   <input type="text" id="taskInput" placeholder="Enter a task">
-  <button 
-  onclick="addTask()"
-  id="addTaskButton">Add Task</button>
+  <button id="addTaskButton">Add Task</button>
 
   <script>
     const taskArray = []
-    function addTask(){
-      const addTaskButton = document.querySelector('addTaskButton')
-    }
+    const addTaskButtonElement = document.querySelector('addTaskButton');
+    addTaskButtonElement.addEventListener('click' , function(){
+      taskArray.push[document.getElementById(document.getElementById('taskInput').innerHTML)]
+    });
+    
   </script>
 
 </body>

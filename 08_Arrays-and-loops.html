@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Arrays and Loops</title>
+</head>
+<body>
+  <script>
+    const myArray = [10 , 20 , 30];
+    console.log(myArray);
+    console.log(myArray[0]);
+    myArray[1] = 25;
+    console.log(myArray);
+
+    console.log(typeof myArray); // object
+    console.log(myArray.length); // 3
+    myArray.push(40); // add 40 to the end of the array
+    console.log(myArray);
+    myArray.splice(0, 2);  // remove 2 elements starting from index 0
+    console.log(myArray);
+
+  </script>
+</body>
+</html>
